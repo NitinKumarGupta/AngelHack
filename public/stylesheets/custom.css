@@ -1,0 +1,10 @@
+div.back_image{
+     	
+    height: 400px;
+  width: 100%;
+  background-image: url(../images/fap-09.jpg);
+  /* background-size: cover; */
+  background-repeat-y: 10px;
+  background-position-y: -648px;
+    
+	}

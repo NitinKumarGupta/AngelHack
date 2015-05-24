@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Online MarketPlace for caterers</title>
+    
+   <!--   
+    
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/creative.css")" type="text/css">
+    
+    -->
+    <!-- Bootstrap Core CSS -->
+      
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap.min.css")" type="text/css">
+	
+    <!-- Custom Fonts -->
+      
+  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/font-awesome.min.css")" type="text/css">
+
+    <!-- Plugin CSS -->
+    <!--  
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/animate.min.css")" type="text/css">
+-->
+    <!-- Custom CSS -->
+    
+
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/custom.css")" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+
+        function selectFocus(){
+            document.getElementById('location').focus(); 
+            
+        }
+
+    </script>
+	
+	<style type="text/css">
+	
+	</style>
+	
+</head>
+
+<body style="background-color:#f7f7ed">
+ 
+ <header>
+
+      <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" target="#example">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a href="" class="navbar-brand navbar-left">CaterMe</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="example">
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+         	
+			<form action="/find" method="get"class="form-inline navbar-form navbar-right" style="padding-right: 130px;">
+                    <div class="form-group has-feedback">
+                        <i class="form-control-feedback glyphicon glyphicon-globe "></i><input type="text" class="form-control" placeholder="Bangalore" disabled/>
+                    </div>
+                    <select name="locations" class="selectpicker form-control" id ="location">
+                        <option value="" selected disabled style="display:none;"><span class="glyphicon glyphicon-search">Location</span></option>
+                        <option value="marathalli">Marathalli</option>
+                        <option value="malleshwaram">Malleshwaram</option>
+                        <option value="kundalahalli">Kundalahalli</option>
+                        <option value="indiranagar">Indira Nagar</option>
+                        <option value="mgroad">MG Road</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary btn-md page-scroll wow tada"><span class="glyphicon glyphicon-search"></span> Find Caterer</button>
+            </form>
+          </div>
+      </div>  
+    </header>
+    <br/><br/>
+    
+    
+<div id="partners" class="container spacer ">
+	<h2 class="text-center  wowload fadeInUp">Some of our happy customers</h2>
+  <div class="clearfix">    
+    <div class="col-sm-6 col-sm-offset-3">
+
+
+    <div id="carousel-testimonials" class="carousel slide testimonails  wowload fadeInRight" data-ride="carousel">
+    <div class="carousel-inner">  
+      <div class="item active animated bounceInRight row">
+      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="@routes.Assets.at("images/user1.jpg")" width="100" class="img-circle img-responsive"></div>
+      <div  class="col-xs-10">
+      <p> I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>      
+      <span>Angel Smith - <b>eshop Canada</b></span>
+      </div>
+      </div>
+      <div class="item  animated bounceInRight row">
+      <div class="animated slideInLeft col-xs-2"><img alt="portfolio" src="@routes.Assets.at("images/user2.jpg")" width="100" class="img-circle img-responsive"></div>
+      <div  class="col-xs-10">
+      <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+      <span>John Partic - <b>Crazy Pixel</b></span>
+      </div>
+      </div>
+      <div class="item  animated bounceInRight row">
+      <div class="animated slideInLeft  col-xs-2"><img alt="portfolio" src="@routes.Assets.at("images/user3.jpg")" width="100" class="img-circle img-responsive"></div>
+      <div  class="col-xs-10">
+      <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</p>
+      <span>Harris David - <b>Jet London</b></span>
+      </div>
+      </div>
+  </div>
+
+   <!-- Indicators -->
+   	<ol class="carousel-indicators">
+    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+  	</ol>
+  	<!-- Indicators -->
+  </div>
+
+
+
+    </div>
+  </div>
+    
+    
+
+    
+      <!-- jQuery -->
+    <script src="@routes.Assets.at("javascripts/jquery.js")"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="@routes.Assets.at("javascripts/bootstrap.min.js")"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="@routes.Assets.at("javascripts/jquery.easing.min.js")"></script>
+    <script src="@routes.Assets.at("javascripts/jquery.fittext.js")"></script>
+    <script src="@routes.Assets.at("javascripts/wow.min.js")"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="@routes.Assets.at("javascripts/creative.js")"></script>
+	
+</body>
+</html>
